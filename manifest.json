@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Voice Messages",
+  "version": "1.0",
+  "description": "Send voice messages in Discord web.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://discord.com/*"
+  ],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "24": "assets/icons/icon24.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Discord Voice Messages",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "24": "assets/icons/icon24.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/icon16.png",
+        "assets/icons/icon24.png",
+        "assets/icons/icon32.png",
+        "assets/icons/icon48.png",
+        "assets/icons/icon128.png"
+      ],
+      "matches": ["https://discord.com/*"]
+    }
+  ]
+}
