@@ -3,6 +3,7 @@
   "name": "Discord Voice Messages",
   "version": "1.0",
   "description": "Send voice messages in Discord web.",
+  "author": "Benotsmane Youssouf",
   "permissions": [
     "activeTab"
   ],
